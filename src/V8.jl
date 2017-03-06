@@ -1,4 +1,4 @@
-module Node
+module V8
     export js, @js_str
 
     function __init__()
