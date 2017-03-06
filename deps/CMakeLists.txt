@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.6)
-project(libj2)
+project(libembedded)
 
 set (CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake ${CMAKE_MODULE_PATH})
 
@@ -20,11 +20,12 @@ include_directories(
 ${Julia_INCLUDE_DIRS}
 )
 
-set(libj2_SRC
+set(libembedded_SRC
+    src/embedded.cpp
     src/j2.cpp
 )
 
-add_library(j2 SHARED ${libj2_SRC})
-target_link_libraries(j2 ${Julia_LIBRARY} v8 v8_libbase v8_libplatform)
+add_library(embedded SHARED ${libembedded_SRC})
+target_link_libraries(embedded ${Julia_LIBRARY} v8 v8_libbase v8_libplatform)
 
-install(TARGETS j2 LIBRARY DESTINATION lib)
+install(TARGETS embedded LIBRARY DESTINATION lib)

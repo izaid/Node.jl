@@ -8,8 +8,6 @@ static v8::Platform *m_platform;
 static v8::Isolate *m_isolate;
 
 void jl_v8_init(const char *path) {
-  printf("Initing v8\n");
-
   class Allocator : public v8::ArrayBuffer::Allocator {
   public:
     void *Allocate(size_t length) { return new char[length]; }
@@ -51,6 +49,5 @@ jl_value_t *jl_v8_eval(const char *src) {
   v8::Local<v8::Script> script =
       v8::Script::Compile(context, v8::String::NewFromUtf8(m_isolate, src))
           .ToLocalChecked();
-
-  return jl_nothing;
+  return j2::FromJavaScriptValue(script->Run(context).ToLocalChecked());
 }
