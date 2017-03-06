@@ -1,2 +1,4 @@
-deps/node_modules
+deps/build
+deps/include/j2.h
+deps/src/j2.cpp
 deps/usr
