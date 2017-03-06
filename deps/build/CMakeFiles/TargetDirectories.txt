@@ -1,7 +1,0 @@
-/Users/irwin/.julia/v0.5/V8/deps/build/CMakeFiles/install/local.dir
-/Users/irwin/.julia/v0.5/V8/deps/build/CMakeFiles/install/strip.dir
-/Users/irwin/.julia/v0.5/V8/deps/build/CMakeFiles/install.dir
-/Users/irwin/.julia/v0.5/V8/deps/build/CMakeFiles/list_install_components.dir
-/Users/irwin/.julia/v0.5/V8/deps/build/CMakeFiles/rebuild_cache.dir
-/Users/irwin/.julia/v0.5/V8/deps/build/CMakeFiles/edit_cache.dir
-/Users/irwin/.julia/v0.5/V8/deps/build/CMakeFiles/j2.dir
