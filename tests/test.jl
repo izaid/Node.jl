@@ -11,3 +11,8 @@ using V8
 
 @test "Hello, world!" == js"\"Hello, world!\""
 @test "Hello, world!" != js"\"Hello, wo\""
+
+js"var x = 10"
+
+res = js"x";
+println(res);
