@@ -2,8 +2,6 @@
 
 #include <j2.h>
 
-#include "v8.h"
-
 static v8::Platform *m_platform;
 static v8::Isolate *m_isolate;
 
