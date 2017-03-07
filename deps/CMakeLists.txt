@@ -25,6 +25,8 @@ set(libembedded_SRC
     src/j2.cpp
 )
 
+add_definitions(-DJULIA_ENABLE_THREADING=1)
+
 add_library(embedded SHARED ${libembedded_SRC})
 target_link_libraries(embedded ${Julia_LIBRARY} v8 v8_libbase v8_libplatform)
 
